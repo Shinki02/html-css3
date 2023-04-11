@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+        <header>
+            <nav id="menu-top">
+                <a id="logo-menu" href="index.html"><img src="img/logo.png" alt="Logo"></a>
+                <div class="menu" id="menu">
+                    <a href="javascript:void(0);" style="font-size:15px;" id="icon" class="icon" onclick="myFunction()">&#9776;</a>
+                    <div class="menu-a" id="menu">
+                        <a href="index.html">Trang Chủ</a>
+                        <a href="sanpham.html">Sản Phẩm</a>
+                        <a href="gioithieu.html">Giới thiệu</a>
+                        <a href="giohang.html">Giỏ hàng</a>
+                    </div>
+                        
+                        <a id="login" href="dangnhap.html">Log in</a>
+                        <input type="search" id="search" placeholder="Tìm kiếm">
+                </div>
+                
+
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("menu");
+                        if (x.className === "menu") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "menu";
+                        }
+                    }
+                </script>
+            </nav>
+        </header>
+
+
+        <div id="content">
+            <section id="main-img">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <img src="img/anh3.jpg" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides fade">
+                      <img src="img/anh2.jpg" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides fade">
+                      <img src="img/anh4.png" style="width:100%">
+                    </div>
+                  </div>
+            
+                  <div style="text-align:center" id="dot-bl">
+                    <span class="dot" onclick="currentSlide(0)"></span> 
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                  </div> 
+                  <script src="slideshow.js"></script> 
+            </section>
+            
+            <div id="video-ad">
+                <video src="video/Coca-Cola TURN IT UP - AMEE x Coca-Cola (Official Lyrics Video).mp4" autoplay loop muted></video>
+            </div>
+
+            <section id="sanpham">
+                <article>
+                    <div id="sanpham-text">
+                        <h2>Coca-Cola® của bạn</h2>
+                        <p>Một sản phẩm mang đậm dấu ấn cá nhân của bạn, một món quà tuyệt vời dành cho bạn bè và gia đình trong những dịp đặc biệt. Hãy để chúng tôi cá nhân hóa lon coca-cola® của bạn.
+                        </p>
+                        <a href="sanpham.html"><button>Xem sản phẩm</button></a>
+                    </div>
+                    <div id="sanpham-img">
+                        <img src="img/sanpham.jpg" alt="">
+                    </div>
+                </article>
+            </section>
+
+            <section id="new-sanpham">
+                <article>
+                    <div id="new-sanpham-video">
+                        <video src="video/Coca-Cola Vietnam Trao Coca-Cola trao giai điệu hứng khởi (Encouragement).mp4" autoplay muted controls loop></video>
+                    </div>
+                    <div id="new-sanpham-text">
+                        <h2>
+                            Hân hạnh chào mừng các bạn đến với Coca-Cola® 
+                        </h2>
+                        <p>Một hương vị ngọt ngào mới sẽ đến với bạn vào đúng dịp mùa hè này</p>
+                        <h4>Bạn đã Sẵn Sàng?</a></h4>
+                    </div>
+                </article>
+            </section>
+
+            <section id="social">
+                <div id="social-title">
+                    <h2>Đồng hành cùng Coca-Cola® tại</h2>
+                </div>
+                <div id="social-item">
+                    <div id="margin">
+                    <div class="social-item-content">
+                        <a href="https://twitter.com/cocacola/with_replies">
+                            <img class="large-icon" src="img/New-Twitter-Coca-Cola.jpg" alt="">
+                            <div class="social-icon">
+                                <img id="icon" src="img/icon-twitter.19d7e9de57475b8de6a58e97e7f52dfb.svg" alt=""><p></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social-item-content">
+                        <a href="https://www.facebook.com/TCCCVN/?locale=vi_VN">
+                            <img class="large-icon" src="img/fb.png" alt="">
+                            <div class="social-icon">
+                                <img id="icon" src="img/icon-facebook.svg" alt=""><p></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social-item-content">
+                        <a href="https://www.instagram.com/cocacola/?hl=vi">
+                            <img class="large-icon" src="img/insta.png" alt="">
+                            <div class="social-icon">
+                                <img id="icon" src="img/icon-instagram.svg" alt=""><p></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social-item-content">
+                        <a href="https://www.youtube.com/user/cocacola">
+                            <img class="large-icon" src="img/youtube.jpg" alt="">
+                            <div class="social-icon">
+                                <img id="icon" src="img/icon-youtube.svg" alt=""><p></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                        
+                    
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <section id="footer">
+                <div class="column" !important style="margin-right: 5%;">
+                    <a href="#"><img class="footer-img" src="img/logo.png" alt=""></a>
+                    <p>© 2023 The Coca-Cola vCompany. All rights reserved.</p>
+                </div>
+                <div class="column">
+                    <a href="#">Liên hệ với chúng tôi</a><br>
+                    <a href="#">Chính sách bảo mật</a><br>
+                    <a href="#">Điều Khoản</a>
+                </div>
+                <div class="column">
+                    <a href="#">Địa chỉ sản xuất</a><br>
+                    <a href="#">bản quyền</a><br>
+                    <a href="#">Sản phẩm</a>
+                    
+                </div>
+                <div class="column">
+                    <a href="#">Sản phẩm của PEPSICO</a><br>
+                    <a href="#">Chính sách quảng cáo</a>
+                </div>
+                <div class="column" !important style="float: right;">
+                    <a href="#"><img class="footer-img-ct" src="img/footer-logo.png" alt=""></a>
+                    <p>
+                        Chính sách bảo mật | Điều khoản sử dụng | Liên hệ
+                    </p>
+                </div>
+            </section>
+        </footer>
+</body>
+</html>

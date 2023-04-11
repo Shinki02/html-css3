@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dangki.css">
+
+</head>
+<body>
+
+    <header>
+        <nav id="menu-top">
+            <a id="logo-menu" href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            <div class="menu" id="menu">
+                <a href="javascript:void(0);" style="font-size:15px;" id="icon" class="icon" onclick="myFunction()">&#9776;</a>
+                <div class="menu-a" id="menu">
+                    <a href="index.html">Trang Chủ</a>
+                    <a href="sanpham.html">Sản Phẩm</a>
+                    <a href="gioithieu.html">Giới thiệu</a>
+                    <a href="giohang.html">Giỏ hàng</a>
+                </div>
+            </div>
+            
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("menu");
+                    if (x.className === "menu") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "menu";
+                    }
+                }
+            </script>
+        </nav>
+    </header>
+    <form>
+        <h3>Đăng kí ngay</h3>
+        <label for="username">Tên đăng nhập</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+        <label for="username">Email</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+        <label for="password">Mật khẩu</label>
+        <input type="password" placeholder="Password" id="password">
+        <label for="password">Nhập lại mật khẩu</label>
+        <input type="password" placeholder="Password" id="password">
+        <button>Đăng kí</button>
+        <div class="social">
+          <div class="go"><i class="fab fa-google"></i> Đăng kí với Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i> Đăng kí với Facebook</div>
+        </div>
+    </form>
+</body>
+</html>
+
+

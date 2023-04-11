@@ -1,0 +1,479 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+@font-face{
+    font-family: text;
+    src: url(fonts/CHOPS___.TTF);
+}
+#menu-top{
+    width: 100%;
+    background-color: #0b0e11;
+    padding: 12px;
+}
+#logo-menu{
+    margin-left: 3%;
+    margin-right: 3%;
+    float: left;
+    width: 3%;
+}
+#logo-menu img{
+    width: 50px;
+    height: 50px;
+}
+#logo-menu img:hover{
+    -webkit-animation:fa-spin 2s infinite linear;
+    animation:fa-spin 2s infinite linear;
+}
+.menu{
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.menu>.icon{
+    display: none;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+
+
+}
+.menu a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 110%;
+    padding-left:3%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu a:hover {
+    color: white;
+    opacity: 70%;
+    transition: 0.4s;
+    
+}
+#search{
+    float: right;
+    padding: 6px 10px;
+    margin-right: 2%;
+    width: 90px;
+    border: none;
+    border-radius: 30px; 
+}
+#login:hover{
+    background-color: white;
+    color: #fc0404;
+}
+#login{
+    float: right;
+    margin-right: 2%;
+    border: 2px white solid;
+    border-radius: 5px;
+    font-size: 75%;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+#content{
+    width: 100%;
+}
+#main-img{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    float: left;
+    background-color: #03060a;
+
+}
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  /* Ẩn các slider */
+  .mySlides {
+      display: block;
+      width: 100%;
+  }
+  #dot-bl{
+      position: absolute;
+      left: 48%;
+      bottom: 1%;
+  }
+  /*     */
+  /* định dạng các chấm chuyển đổi các slide */
+  .dot {
+    cursor:pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 3px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  /* khi được hover, active đổi màu nền */
+  .active, .dot:hover {
+    background-color: #f3ecec;
+  }
+
+  /* Thêm hiệu ứng khi chuyển đổi các slide */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: 85%} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: 85%} 
+    to {opacity: 1}
+  }
+#video-ad{
+    width: 100%;
+    float: left;
+}
+#video-ad video{
+    width: 100%;
+}
+#sanpham{
+    width: 100%;
+    padding: 14% 5%;
+    float: left;
+    box-sizing: border-box;
+    background-color: #d32c0e;
+}
+#sanpham-text{
+    float: left;
+    width: 45%;
+    padding: 0% 5%;
+    box-sizing: border-box;
+}
+#sanpham-text h2{
+    text-transform: uppercase;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+}
+#sanpham-text p{
+    margin-top: 6%;
+    color: white;
+    font-size: 1em;
+}
+#sanpham-text a:focus{
+    border: none;
+    border-radius: 30px;
+}
+#sanpham-text button{
+    margin-top: 6%;
+    font-weight: bold;
+    color: white;
+    padding: 6px 10px;
+    background-color: #08090a;
+    border: white 2px solid;
+    border-radius: 30px;
+}
+#sanpham-text a button:hover{
+    background-color: white;
+    color: #010102;
+    transition: 1s;
+}
+#sanpham-img{
+    float: right;
+    width: 55%;
+
+}
+#sanpham-img img{
+    width: 100%;
+}
+#new-sanpham{
+    width: 100%;
+    padding: 8% 5% 3% 5%;
+    float: left;
+    box-sizing: border-box;
+}
+#new-sanpham-video{
+    width: 60%;
+    float: left;
+}
+#new-sanpham-video video{
+    width: 100%;
+    border-radius: 15px;
+}
+#new-sanpham-text{
+    float: left;
+    width: 40%;
+    padding: 3% 5%;
+    box-sizing: border-box;
+}
+#new-sanpham-text h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: #0a111a;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+#new-sanpham-text p{
+    text-align: center;
+    font-style: italic;
+    margin-top: 7%;
+    font-size: 1.5em;
+}
+#new-sanpham-text h4{
+    margin-top: 5%;
+    text-align: center;
+}
+#new-sanpham-text h4 a{
+    font-size: 2.5em; 
+    font-weight: bold; 
+    text-decoration: none; 
+    color: #f73b0c;
+}
+#social{
+    clear: both;
+    width: 100%;
+
+}
+#social-title{
+    width: 100%;
+    background-color: rgb(238, 57, 12);
+    padding: 20px;
+    box-sizing: border-box;
+}
+#social-title>h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5em;
+    margin: auto;
+    color: #090c0f;
+}
+#social-item{
+    width: 100%;
+    box-sizing: border-box;
+}
+#margin{
+    margin: auto;
+    width: 90%;
+    max-height: 400px;
+}
+.social-item-content{
+    width: 25%;
+    float: left;
+    position: relative;
+    margin-bottom: 5%;
+   
+}
+.social-item-content img{
+    width: 100%;
+    
+}
+.social-icon{
+    position: absolute;
+    width: 15%;
+    left: 5px;
+    bottom: 5px;
+    opacity: 70%;
+}
+.large-icon{
+    display: block;
+    transition: 0.9s cubic-bezier(0.23, 1, 0.320, 1);
+}
+.large-icon:hover{
+    transform: scale(1.1);
+}
+.social-item-content { 
+    display: inline-block;
+    overflow: hidden; 
+  }
+footer{
+    background-color: #07090a;
+    width: 100%;
+    float: left;
+    padding: 40px;
+    box-sizing: border-box;
+}
+#footer{
+    margin: auto;
+    width: 95%;
+    height: 100%;
+    float: left;
+    padding: 20px 0px;
+    position: relative;
+    
+}
+.column{
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+   
+}
+.column a{
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.column a:hover{
+    color: rgb(248, 242, 242);
+    opacity: 80%;
+}
+.column p{
+    color: rgb(226, 215, 215);
+    font-size: 0.7em;
+    margin-top: 15px;
+    position: absolute;
+    bottom: 20px;
+}
+.footer-img{
+    width: 100px;
+}
+.footer-img-ct{
+    width: 150px;
+}
+@media screen  and (max-width: 1140px){
+    .topnav> a {
+        font-size: 10px;
+    }
+    #social-title {
+        font-size: 7px;
+    }
+    .search{
+        width: 30px;
+    }
+    #img-li img{
+        width: 40px;
+        height: 40px;
+    }
+    .column{
+        padding: 3px
+    }
+    .column a{
+        font-size: 0.8em;
+    }
+    .column p{
+        font-size: 0.4em;
+    }
+    .footer-img{
+        width: 50px;
+    }
+    .footer-img-ct{
+        width: 70px;
+    }
+}
+@media screen  and (max-width: 990px){
+    #new-sanpham-text h2,#sanpham-text h2{
+        font-size: 1.5em;
+    }
+    #sanpham-text p{
+        font-size: 0.6em;
+    }
+    #new-sanpham-text>p{
+        font-size: 0.8em;
+    }
+    #new-sanpham-text h4 a{
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 660px) {
+    #new-sanpham-text h2,#sanpham-text h2{
+        font-size: 1em;
+    }
+    #new-sanpham-text h4 a{
+        font-size: 1em;
+    }
+    .menu>.icon{
+        display: block;
+        margin-left: 30px;
+    }
+    .menu-a>a{
+        display: none;
+    }
+    #login{
+        display: block;
+    }
+}
+@media screen and (max-width: 660px) {
+    .menu.responsive .icon{
+        margin-left: 30px;
+        float: left;
+        color: rgb(199, 7, 7);
+        position: relative;
+    }
+    .menu.responsive .menu-a{
+        position: absolute;
+        z-index: 2;
+        float: left;
+        margin-left: 2%;
+        width: 25%;
+        top: 80px;
+        left: 0px;
+        background-color: #d4110b;
+
+        padding: 1%;
+
+    }
+    
+    .menu.responsive a {
+        font-size: 12px;
+        line-height: 18px;
+        float: none;
+        display: block;
+        text-align: left;
+        color: rgb(20, 4, 4);
+
+        
+    }
+    
+
+
+}
+@media screen  and (max-width: 680px){
+    .column{
+        padding: 2px
+    }
+    .column a{
+        font-size: 0.4em;
+    }
+    .column p{
+        font-size: 0.15em;
+    }
+    .footer-img{
+        width: 30px;
+    }
+    .footer-img-ct{
+        width: 45px;
+    }
+}
+@font-face {
+    font-family: sad\ films;
+    src: url(fonts/sad\ films.ttf);
+}
